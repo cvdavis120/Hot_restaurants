@@ -1,3 +1,7 @@
 .jumbotron {
     text-align: center;
 }
+
+#image1 {
+    background-image: url("images/table_food.jpg");
+}
