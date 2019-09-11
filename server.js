@@ -13,6 +13,10 @@ app.use(express.json());
 app.get("/reservation", function(req, res) {
     res.sendFile(path.join(__dirname,"newres.html"));
 });
+app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname,"tables.html"));
+});
+
 
 // reservation table json
 var customerReserve = [
