@@ -3,5 +3,7 @@
 }
 
 #image1 {
+    width: 100%;
     background-image: url("images/table_food.jpg");
+    height: 500px;
 }
