@@ -12,13 +12,32 @@
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Get your tables!</h1>
-        <p class="lead">Look at all these tables!</p>
-        <hr class="my-4">
-        <p>Woah, that's alot of tables.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Checkout Tables!</a>
-        <a class="btn btn-warning btn-lg" href="#" role="button">Make a Reservation!</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Get your tables!</h1>
+            <p class="lead">Look at all these tables!</p>
+            <hr class="my-4">
+            <p>Woah, that's alot of tables.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Checkout Tables!</a>
+            <a class="btn btn-warning btn-lg" href="#" role="button">Make a Reservation!</a>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Current Reservations
+            </div>
+            <ul class="list-group list-group-flush" id="reservations">
+
+            </ul>
+        </div>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                Waiting List
+            </div>
+            <ul class="list-group list-group-flush" id="waitlist">
+
+            </ul>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
