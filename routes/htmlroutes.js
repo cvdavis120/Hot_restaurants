@@ -11,23 +11,29 @@ function handleRequest(req, res) {
         case "/reservations":
             return fs.readFile(__dirname + "/newres.html", function (err, data) {
                 if (err) throw err;
-                res.writeHead(200, { "Content-Type": "text/html" });
+                res.writeHead(200, {
+                    "Content-Type": "text/html"
+                });
                 res.end(data);
             });
 
         case "/tables":
             return fs.readFile(__dirname + "/tables.html", function (err, data) {
                 if (err) throw err;
-                res.writeHead(200, { "Content-Type": "text/html" });
+                res.writeHead(200, {
+                    "Content-Type": "text/html"
+                });
                 res.end(data);
             });
 
 
-        // default to rendering index.html, if none of above cases are hit
+            // default to rendering index.html, if none of above cases are hit
         default:
             return fs.readFile(__dirname + "/index.html", function (err, data) {
                 if (err) throw err;
-                res.writeHead(200, { "Content-Type": "text/html" });
+                res.writeHead(200, {
+                    "Content-Type": "text/html"
+                });
                 res.end(data);
             });
     }
